@@ -96,7 +96,13 @@ textarea {
 
    /* --------- body style -------- */
   
-  
+  body {
+      background-image: url('../bestheel.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+  }
    
 
 
