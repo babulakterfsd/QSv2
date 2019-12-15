@@ -38,7 +38,6 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
    
- 
   
   
   
@@ -69,6 +68,22 @@
       $('[data-toggle="popover"]').popover();
     });
   </script>
+
+  <!-- Disables cut, copy , paste -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+        //Disable cut copy paste
+        $('body').bind('cut copy paste', function (e) {
+            e.preventDefault();
+        });
+       
+        //Disable mouse right click
+        $("body").on("contextmenu",function(e){
+            return false;
+        });
+    });
+    </script>
+
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   <noscript>Sorry kiddo ! your browser doesn't support <strong>Javascript</strong> and that's why you're missing some amazing features of this awesome website.</noscript>
 </body>
