@@ -1,0 +1,8 @@
+1. how to remove outline from bootstrap 4 input focus ?
+
+   ----> input{
+    outline: none;
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
+
+2.
